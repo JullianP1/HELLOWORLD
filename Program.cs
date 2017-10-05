@@ -6,9 +6,10 @@ namespace HELLOWORLD
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-            string hello = Console.ReadLine ();
-            Console.WriteLine("Yo whats up my fam dog.");
+            Console.WriteLine("Write 2 numbers, I'll prove how good I am at repeating things");
+            string number1 = Console.ReadLine ();
+            string number2 = Console.ReadLine();
+            Console.WriteLine(number1 + " " + number2 + ". Told you I can repeat things.");
         }
     }
 }
