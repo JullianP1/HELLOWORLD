@@ -6,10 +6,10 @@ namespace HELLOWORLD
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Write 2 numbers, I'll prove how good I am at repeating things");
-            string number1 = Console.ReadLine ();
-            string number2 = Console.ReadLine();
-            Console.WriteLine(number1 + " " + number2 + ". YOYO THOSE ARE NUMBERS.");
+            Console.WriteLine("Write 2 numbers, I'll prove how good my math skills.");
+            float number1 = float.Parse(Console.ReadLine ());
+            float number2 = float.Parse(Console.ReadLine());
+            Console.WriteLine(number1 + number2 + ". I am a literal calculator.");
         }
     }
 }
