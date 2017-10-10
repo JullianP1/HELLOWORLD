@@ -15,7 +15,7 @@ namespace HELLOWORLD
 			float number1 = float.Parse(Console.ReadLine());
 			float number2 = float.Parse(Console.ReadLine());
 
-			Console.WriteLine("Select an option.\n1.-add\n2.-Subtract\n3.-Multiply\n4.-Divide");
+			Console.WriteLine("Select an option.\n1.-add\n2.-Subtract\n3.-Multiply\n4.-Divide\n5.Exit");
 			int option = int.Parse(Console.ReadLine());
 
 			EvaluateOption(option, number1, number2); 
@@ -53,6 +53,8 @@ namespace HELLOWORLD
 				Console.WriteLine("Yoyo my fam I multiplied those and got: " + MultiplyTwoNumbers(n1, n2));
 			} else if (option == 4) {
 				Console.WriteLine("Yoyo my fam I divided those and got: " + DivideTwoNumbers(n1, n2));
+            } else if (option == 5) {
+                return;
             } else {
                 Console.WriteLine("Uhh, pick from the list plz?");
             }
