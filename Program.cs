@@ -6,15 +6,21 @@ namespace HELLOWORLD
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Write 2 numbers, I'll prove how good my math skills are.");
-            float number1 = float.Parse(Console.ReadLine ());
-            float number2 = float.Parse(Console.ReadLine());
-
-            Console.WriteLine ("Select an option.\n1.-add\n2.-Subtract\n3.-Multiply\n4.-Divide");
-            int option = int.Parse(Console.ReadLine());
-
-            EvaluateOption (option, number1, number2);
+            Start ();
         }
+
+        public static void Start()
+        {
+			Console.WriteLine("Write 2 numbers, I'll prove how good my math skills are.");
+			float number1 = float.Parse(Console.ReadLine());
+			float number2 = float.Parse(Console.ReadLine());
+
+			Console.WriteLine("Select an option.\n1.-add\n2.-Subtract\n3.-Multiply\n4.-Divide");
+			int option = int.Parse(Console.ReadLine());
+
+			EvaluateOption(option, number1, number2); 
+        }
+
         public static float AddTwoNumbers(float n1, float n2) {
             float result = n1 + n2;
             return result;
@@ -48,8 +54,9 @@ namespace HELLOWORLD
 			} else if (option == 4) {
 				Console.WriteLine("Yoyo my fam I divided those and got: " + DivideTwoNumbers(n1, n2));
             } else {
-                Console.WriteLine("Uhh, pick from the list plz");
+                Console.WriteLine("Uhh, pick from the list plz?");
             }
+            Start();
 		}
     }
 }
