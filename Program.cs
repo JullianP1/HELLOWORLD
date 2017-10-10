@@ -9,7 +9,11 @@ namespace HELLOWORLD
             Console.WriteLine("Write 2 numbers, I'll prove how good my math skills are.");
             float number1 = float.Parse(Console.ReadLine ());
             float number2 = float.Parse(Console.ReadLine());
-            Console.WriteLine (AddTwoNumbers(number1, number1) + " I'm lit fam.");
+
+            Console.WriteLine ("Select an option.\n1.-add\n2.-Subtract\n3.-Multiply\n4.-Divide");
+            int option = int.Parse(Console.ReadLine());
+
+            Console.WriteLine (AddTwoNumbers(number1, number1));
         }
         public static float AddTwoNumbers(float n1, float n2) 
         {
