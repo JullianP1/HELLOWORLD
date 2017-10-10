@@ -19,10 +19,36 @@ namespace HELLOWORLD
             float result = n1 + n2;
             return result;
         }
+
+		public static float SubtractTwoNumbers(float n1, float n2)
+		{
+			float result = n1 - n2;
+			return result;
+		}
+
+		public static float MultiplyTwoNumbers(float n1, float n2)
+		{
+			float result = n1 * n2;
+			return result;
+		}
+
+		public static float DivideTwoNumbers(float n1, float n2)
+		{
+			float result = n1 * n2;
+			return result;
+		}
+
         public static void EvaluateOption (int option, float n1, float n2) {
             if(option == 1) {
                 Console.WriteLine("Yoyo my fam I added those and got: " + AddTwoNumbers(n1, n2));
-            }
-        }
+            } else if (option == 2) {
+                Console.WriteLine("Yoyo my fam I subtracted those and got: " + SubtractTwoNumbers(n1, n2));
+			} else if (option == 3) {
+				Console.WriteLine("Yoyo my fam I multiplied those and got: " + MultiplyTwoNumbers(n1, n2));
+			}
+			else if (option == 3) {
+				Console.WriteLine("Yoyo my fam I divided those and got: " + DivideTwoNumbers(n1, n2));
+			}
+		}
     }
 }
